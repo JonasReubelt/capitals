@@ -19,11 +19,11 @@ class Game(object):
         with open(os.path.join(current_path, "data/capitals.txt")) as f:
             lines = f.read().splitlines()
         self.data = dict([l.split('\t') for l in lines])
-        self.country_selection = self.data.keys()
+        self.country_selection = list(self.data.keys())
         random.shuffle(self.country_selection)
 
     def ask_for(self, country):
-        return raw_input('Was ist die Hauptstadt von {0}? '.format(country))
+        return input('Was ist die Hauptstadt von {0}? '.format(country))
 
     def loop(self):
         for country in self.country_selection:
