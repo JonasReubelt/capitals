@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='capitals',
-      version='0.1.2',
+      version='0.1.3',
       url='http://git.km3net.de/jreubelt/capitals.git',
       description='Capitals quiz',
       author='Jonas Reubelt',
